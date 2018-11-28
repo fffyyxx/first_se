@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'default/css/defaultcss.css' ) }}">
+{% endblock %}
+{% block layinfo %}
+    <div class="hold-transition skin-blue sidebar-mini">
+	    <table class="table table-bordered table-hover">
+		    <tr>
+                <td class="txtleft"><h4>链接地址：</h4></td>
+                <td><a href="{{ data.url }}" target="_blank">{{ data.url }}</a></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>CNNVD编号：</h4></td>
+                <td><h4>{{data.CNNVD}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>漏洞标题：</h4></td>
+                <td><h4>{{data.title}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>CVE编号：</h4></td>
+                <td><h4>{{data.CVE}}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>漏洞等级：</h4></td>
+                <td><h4>{{data.grade}}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>漏洞类型：</h4></td>
+                <td><h4>{{data.loophole_type}}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>攻击类型：</h4></td>
+                <td><h4>{{data.threat_type}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>发布时间：</h4></td>
+                <td><h4>{{data.release_time}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>更新时间：</h4></td>
+                <td><h4>{{data.update_time}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>详细信息：</h4></td>
+                <td><h4>{{data.loophole_info}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>漏洞公告：</h4></td>
+                <td><h4>{{data.loophole_bulletin}}</h4></td>
+            </tr>
+		    <tr>
+                <td class="txtleft"><h4>参考网址：</h4></td>
+                <td><h4>{{data.reference_website}}</h4></td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

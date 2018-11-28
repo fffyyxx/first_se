@@ -1,0 +1,12 @@
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.txtleft {
+    text-align: right;
+    width: 15%;
+}
+
+.form-control {
+    border-radius: 4px;
+}

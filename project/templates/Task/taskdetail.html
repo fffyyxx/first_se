@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'default/css/defaultcss.css' ) }}">
+{% endblock %}
+{% block layinfo %}
+    <div class="hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td class="txtleft"><h4>任务编号：</h4></td>
+                <td><h4>{{ data.task_id }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>任务名称：</h4></td>
+                <td><h4>{{ data.taskname }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>扫描策略：</h4></td>
+                <td><h4>{{ data.taskpolicy }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>任务目标：</h4></td>
+                <td><h4>{{ data.tasktarget }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>任务描述：</h4></td>
+                <td><h4>{{ data.tasktargetinfo }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>申请人：</h4></td>
+                <td><h4>{{ data.taskusername }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>申请状态：</h4></td>
+                <td><h4>
+                    {% if data.requeststatus == '1' %}
+                        创建中
+                    {% elif data.requeststatus == '2' %}
+                        待审批
+                    {% elif data.requeststatus == '3' %}
+                        审批通过
+                    {% else %}
+                        审批拒绝
+                    {% endif %}
+                </h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>创建时间：</h4></td>
+                <td><h4>{{ data.createtime }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>任务状态：</h4></td>
+                <td><h4>
+                    {% if data.taskstatus == '1' %}
+                        待执行
+                    {% elif data.taskstatus == '2' %}
+                        执行中
+                    {% elif data.taskstatus == '3' %}
+                        已结束
+                    {% elif data.taskstatus == '4' %}
+                        已取消
+                    {% else %}
+                        已暂停
+                    {% endif %}
+                </h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>审批人：</h4></td>
+                <td><h4>{{ data.auditname }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>审批备注：</h4></td>
+                <td><h4>{{ data.auditinfo }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>审批时间：</h4></td>
+                <td><h4>{{ data.audittime }}</h4></td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

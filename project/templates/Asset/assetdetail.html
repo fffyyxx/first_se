@@ -1,0 +1,232 @@
+{% extends 'layout.html' %}
+{% block css %}
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename = 'plugins/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'default/css/defaultcss.css' ) }}">
+{% endblock %}
+{% block layinfo %}
+    <div class="box-header">
+        <h4>设备详情</h4>
+    </div>
+    <div class="box-body hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td class="txtleft"><h4>设备名称：</h4></td>
+                <td colspan="3"><h4>{{ data['detail'].asset_name }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>设备编号：</h4></td>
+                <td><h4>{{ data['detail'].asset_num }}</h4></td>
+                <td class="txtleft"><h4>登记时间：</h4></td>
+                <td><h4>{{ data['detail'].asset_registertime }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>设备地址：</h4></td>
+                <td><h4>{{ data['detail'].asset_ip }}</h4></td>
+                <td class="txtleft"><h4>录入员：</h4></td>
+                <td><h4>{{ data['detail'].asset_user }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>运行状态：</h4></td>
+                <td><h4>{{ data['detail'].asset_status }}</h4></td>
+                <td class="txtleft"><h4>使用者：</h4></td>
+                <td><h4>
+                    {{ data['detail'].asset_haver }}
+                </h4></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box-header">
+        <h4>硬件信息</h4>
+    </div>
+    <div class="box-body hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td class="txtleft"><h4>主机名称：</h4></td>
+                <td><h4>{{ data['osinfo'].Hostname }}</h4></td>
+                <td class="txtleft"><h4>系统名称：</h4></td>
+                <td><h4>{{ data['osinfo'].Ostname }}</h4></td>
+                <td class="txtleft"><h4>CPU品牌：</h4></td>
+                <td><h4>{{ data['osinfo'].CPU_model }}</h4></td>
+                <td class="txtleft"><h4>CPU型号：</h4></td>
+                <td><h4>{{ data['osinfo'].CPU_num }}</h4></td>
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>内存：</h4></td>
+                <td><h4>{{ data['osinfo'].Memory }}</h4></td>
+                <td class="txtleft"><h4>硬盘：</h4></td>
+                <td><h4>{{ data['osinfo'].Disk }}</h4></td>
+                <td class="txtleft"><h4>上线时间：</h4></td>
+                <td><h4>{{ data['osinfo'].Up_time }}</h4></td>
+                <td class="txtleft"><h4>下线时间：</h4></td>
+                <td><h4>{{ data['osinfo'].Down_time }}</h4></td>
+
+            </tr>
+            <tr>
+                <td class="txtleft"><h4>供应商：</h4></td>
+                <td><h4>{{ data['osinfo'].Productor }}</h4></td>
+                <td class="txtleft"><h4>质保到期：</h4></td>
+                <td><h4>{{ data['osinfo'].Guarante_time }}</h4></td>
+                <td class="txtleft"><h4>更新时间：</h4></td>
+                <td colspan="3"><h4>{{ data['osinfo'].Updatetime }}</h4></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box-header">
+        <h4>漏洞详情</h4>
+    </div>
+    <div class="box-body hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover" id="example1">
+            <thead>
+            <tr>
+                <th class="text-center">漏洞编号</th>
+                <th class="text-left">漏洞名称</th>
+                <th class="text-center">CVE</th>
+                <th class="text-center">危害级别</th>
+                <th class="text-center">创建时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if data['bugs'] %}
+                {% for p in data['bugs'] %}
+                    <tr>
+                        <td class="text-center">{{ data['bugs'][p]['Vuln_id'] }}</td>
+                        <td class="text-left">{{ data['bugs'][p]['Vuln_name'] }}</td>
+                        <td class="text-center">{{ data['bugs'][p]['Cve_name'] }}</td>
+                        <td class="text-center">{{ data['bugs'][p]['Leave'] }}</td>
+                        <td class="text-center">{{ data['bugs'][p]['Create_data'] }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+    <div class="box-header">
+        <h4>端口信息</h4>
+    </div>
+    <div class="box-body hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover" id="example2">
+            <thead>
+            <tr>
+                <th class="text-center">端口号</th>
+                <th class="text-center">请求方式</th>
+                <th class="text-center">版本号</th>
+                <th class="text-center">厂商</th>
+                <th class="text-center">更新时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if data['ports'] %}
+                {% for p in data['ports'] %}
+                    <tr>
+                        <td class="text-center">{{ data['ports'][p]['Port']}}</td>
+                        <td class="text-center">{{ data['ports'][p]['Requestname'] }}</td>
+                        <td class="text-center">{{ data['ports'][p]['Version'] }}</td>
+                        <td class="text-left">{{ data['ports'][p]['Product'] }}</td>
+                        <td class="text-center">{{ data['ports'][p]['Updatetime'] }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+    <div class="box-header">
+        <h4>文件信息</h4>
+    </div>
+    <div class="box-body hold-transition skin-blue sidebar-mini">
+        <table class="table table-bordered table-hover" id="example3">
+            <thead>
+            <tr>
+                <th class="text-center">文件名</th>
+                <th class="text-center">文件说明</th>
+                <th class="text-center">更新时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if data['files'] %}
+                {% for p in data['files'] %}
+                    <tr>
+                        <td class="text-center">{{ data['files'].Name }}</td>
+                        <td class="text-center">{{ data['files'].Fileinfo }}</td>
+                        <td class="text-center">{{ data['files'].Updatetime }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+{% block js %}
+    <script src="{{ url_for('static',filename ='plugins/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ url_for('static',filename ='plugins/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+    <script>
+        $(function () {
+            $('#example1').DataTable({
+                'processing': true,//是否显示加载中提示
+                'autoWidth': false,//是否自动计算表格各列宽度
+                'info': true,//是否显示页数信息
+                'pagingType': "full_numbers",
+                'pageLength': 10,//默认每页显示多少条记录
+                'searching': false,//是否显示搜索框
+                'ordering': false,//是否允许排序
+                'serverSide': false,//是否从服务器获取数据
+                'stateSave': false,//页面重载后保持当前页
+                'lengthChange': false,//是否显示每页大小的下拉框
+                'lengthMenu': [10, 20, 30],//长度菜单
+                'language': {
+                    'lengthMenu': "每页显示 _MENU_记录",
+                    'zeroRecords': "暂无可用数据",
+                    'info': "第_PAGE_页/共 _PAGES_页 ( 共\_TOTAL\_条记录 )",
+                    'infoEmpty': "没有符合条件的记录",
+                    'search': "查找",
+                    'infoFiltered': "(从 _MAX_条记录中过滤)",
+                    'paginate': {"first": "首页 ", "last": "末页", "next": "下一页", "previous": "上一页"}
+                }
+            });
+            $('#example2').DataTable({
+                'processing': true,//是否显示加载中提示
+                'autoWidth': false,//是否自动计算表格各列宽度
+                'info': true,//是否显示页数信息
+                'pagingType': "full_numbers",
+                'pageLength': 10,//默认每页显示多少条记录
+                'searching': false,//是否显示搜索框
+                'ordering': false,//是否允许排序
+                'serverSide': false,//是否从服务器获取数据
+                'stateSave': false,//页面重载后保持当前页
+                'lengthChange': false,//是否显示每页大小的下拉框
+                'lengthMenu': [10, 20, 30],//长度菜单
+                'language': {
+                    'lengthMenu': "每页显示 _MENU_记录",
+                    'zeroRecords': "暂无可用数据",
+                    'info': "第_PAGE_页/共 _PAGES_页 ( 共\_TOTAL\_条记录 )",
+                    'infoEmpty': "没有符合条件的记录",
+                    'search': "查找",
+                    'infoFiltered': "(从 _MAX_条记录中过滤)",
+                    'paginate': {"first": "首页 ", "last": "末页", "next": "下一页", "previous": "上一页"}
+                }
+            });
+            $('#example3').DataTable({
+                'processing': true,//是否显示加载中提示
+                'autoWidth': false,//是否自动计算表格各列宽度
+                'info': true,//是否显示页数信息
+                'pagingType': "full_numbers",
+                'pageLength': 10,//默认每页显示多少条记录
+                'searching': false,//是否显示搜索框
+                'ordering': false,//是否允许排序
+                'serverSide': false,//是否从服务器获取数据
+                'stateSave': false,//页面重载后保持当前页
+                'lengthChange': false,//是否显示每页大小的下拉框
+                'lengthMenu': [10, 20, 30],//长度菜单
+                'language': {
+                    'lengthMenu': "每页显示 _MENU_记录",
+                    'zeroRecords': "暂无可用数据",
+                    'info': "第_PAGE_页/共 _PAGES_页 ( 共\_TOTAL\_条记录 )",
+                    'infoEmpty': "没有符合条件的记录",
+                    'search': "查找",
+                    'infoFiltered': "(从 _MAX_条记录中过滤)",
+                    'paginate': {"first": "首页 ", "last": "末页", "next": "下一页", "previous": "上一页"}
+                }
+            })
+        });
+    </script>
+{% endblock %}

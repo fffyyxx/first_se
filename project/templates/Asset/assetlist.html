@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename = 'plugins/bower_components/bootstrap-table/bootstrap-table.min.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'default/css/defaultcss.css' ) }}">
+{% endblock %}
+{% block webinfo %}
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            设备管理
+        </h1>
+    </section>
+    <section class="content">
+        <div class="box">
+            <div class="box-header">
+                <div class="form-inline pull-left">
+                    <div class="form-group">
+                        <input id="user_idx" type="hidden" value="{{ session['loginname'] }}"/>
+                        <input id="isx_admin" type="hidden" value="{{ session['is_admin'] }}"/>
+                        <span class="form-control btn btn-primary hidden"
+                              onclick="x_admin_show('新增设备','/view/asset_curd','75%','95%')">&nbsp;新增</span>
+                        <span class="form-control btn btn-primary" id="btnTableSearch">搜索</span>
+                        <input type="text" id="txt_keys" class="form-control" value="" placeholder="设备名称或设备地址ip"/>
+                        <select class="form-control" id="assetstatus">
+                            {% for p in data %}
+                                <option value="{{ p }}">{{ data[p] }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-inline pull-right">
+                    <div class="form-group">
+                        <span class="form-control btn btn-primary"
+                              onclick="x_admin_show('扫描发现','/view/asset-scan?action=segment','22%','20%')">设备发现
+                        </span>
+                        <span class="form-control btn btn-primary"
+                              onclick="x_admin_show('端口扫描','/view/asset-scan?action=port','22%','40%')">端口扫描
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="example2" class="table table-bordered table-hover">
+
+                </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block js %}
+    <script src="{{ url_for('static',filename = 'plugins/bower_components/bootstrap-table/bootstrap-table.min.js') }}"></script>
+    <script src="{{ url_for('static',filename = 'plugins/bower_components/bootstrap-table/locale/bootstrap-table-zh-CN.min.js') }}"></script>
+    <script src="{{ url_for('static',filename = 'default/js/defaultjs.js') }}"></script>
+    <script src="{{ url_for('static',filename = 'default/js/common.js') }}"></script>
+    <script type="text/javascript">
+        var username = $('#user_idx').val();
+        var role_level = $('#isx_admin').val();
+        $(function () {
+            $('#example2').bootstrapTable({
+                url: '/view/asset_table',         //请求后台的URL（*）
+                method: 'POST',                      //请求方式（*）
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                //toolbar: '#toolbar',                //工具按钮用哪个容器
+                striped: false,                      //是否显示行间隔色
+                cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                pagination: true,                   //是否显示分页（*）
+                sortable: false,                     //是否启用排序
+                //sortOrder: "desc",                   //排序方式
+                queryParams: queryParams,           //传递参数（*）
+                sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+                pageNumber: 1,                       //初始化加载第一页，默认第一页
+                pageSize: 10,                       //每页的记录行数（*）
+                pageList: [],                       //可供选择的每页的行数（*）
+                strictSearch: true,
+                showColumns: false,                  //是否显示所有的列
+                showRefresh: false,                  //是否显示刷新按钮
+                minimumCountColumns: 2,             //最少允许的列数
+                clickToSelect: false,                //是否启用点击选中行
+                //height: 800,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+                uniqueId: "asset_id",                     //每一行的唯一标识，一般为主键列
+                showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
+                cardView: false,                    //是否显示详细视图
+                detailView: false,                   //是否显示父子表
+                undefinedText: '',
+                showHeader: true,
+                paginationVAlign: "bottom",
+                paginationPreText: "上一页",
+                paginationNextText: "下一页",
+                columns: [{
+                    width: '5%',
+                    valign: 'middle',
+                    align: 'center',
+                    checkbox: true
+                }, {
+                    width: '5%',
+                    title: '序号',
+                    valign: 'middle',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return index + 1;
+                    }
+                }, {
+                    field: 'asset_id',
+                    title: '入库编号',
+                    align: 'center',
+                    valign: 'middle'
+                }, {
+                    field: 'asset_name',
+                    align: 'left',
+                    valign: 'middle',
+                    title: '设备名称'
+                }, {
+                    field: 'asset_key',
+                    title: '设备地址',
+                    valign: 'middle',
+                    align: 'center'
+                }, {
+                    field: 'asset_status',
+                    valign: 'middle',
+                    title: '运行状态',
+                    align: 'center'
+                }, {
+                    field: 'asset_user',
+                    valign: 'middle',
+                    title: '录入员',
+                    align: 'center'
+                }, {
+                    field: 'asset_registertime',
+                    title: '登记时间',
+                    valign: 'middle',
+                    align: 'center'
+                }, {
+                    title: '操作',
+                    width: '12%',
+                    align: 'center',
+                    valign: 'middle',
+                    formatter: function (value, row, index) {
+                        var str = '';
+                        str += '<div class="btn-group">';
+                        str += '<span class="input-group btn btn-primary" id="detail" onclick="x_admin_show(\'设备详情\',\'/view/asset_curd/' + row.id + '\',\'70%\',\'95%\')"><i class="fa fa-file-text-o"></i></span>';
+                        if (role_level == 1) {
+                            str += '<span class="input-group btn btn-primary" id="delete" onclick="x_admin_confirm(\'删除\',\'/view/asset_curd/' + row.id + '\',\'DELETE\')"><i class="fa fa-trash"></i></span>';
+                        }
+                        str += '</div>';
+                        return str
+                    }
+                }]
+            });
+
+            //得到查询的参数
+            function queryParams(params) {
+                var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                    limit: params.limit,   //页面大小
+                    offset: params.offset,//页码
+                    txt_keys: $('#txt_keys').val(),
+                    username: username,
+                    is_admin: role_level,
+                    asset_status: $('#assetstatus option:selected').val()
+                };
+                return temp;
+            };
+
+            $("#btnTableSearch").click(function () {
+                $('#example2').bootstrapTable('refresh', {pageNumber: 1});
+            });
+        });
+    </script>
+{% endblock %}

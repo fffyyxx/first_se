@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'plugins/bower_components/bootstrap/dist/css/bootstrap.min.css' )}}">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'plugins/bower_components/font-awesome/css/font-awesome.min.css' )}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'plugins/bower_components/Ionicons/css/ionicons.min.css') }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'plugins/dist/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'plugins/dist/css/skins/_all-skins.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'layer/skin/default/layer.css') }}">
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+{% block layinfo %}
+{% endblock %}
+</body>
+<script src="{{ url_for('static',filename = 'plugins/bower_components/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename = 'plugins/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename = 'plugins/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ url_for('static',filename = 'plugins/bower_components/jqueryform/jquery.form.min.js') }}"></script>
+<!-- OPTIONAL SCRIPTS -->
+<script src="{{ url_for('static',filename = 'layer/layer.js') }}"></script>
+
+
+{% block js %}
+{% endblock %}
+</html>
