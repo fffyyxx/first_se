@@ -37,7 +37,7 @@ def view_permission_table():
         print(e)
 
 
-@Permission.route('/view/permission_curd/<int:id>', methods=['DELETE', 'PUT', 'GET'])
+@Permission.route('/view/permission_curd/<int:id>', methods=['DELETE', 'PUT', 'GET', 'POST'])
 @login_check
 def view_permission_rd(id):
     try:
@@ -49,6 +49,13 @@ def view_permission_rd(id):
                 return json.dumps(dict(Success=0, Result='删除失败,信息不存在！'))
 
         elif request.method == 'PUT':
+            data = PermissionForRd(id).permission_edit()
+            if data == '200':
+                return json.dumps(dict(Success=1, Result='修改成功'))
+            else:
+                return json.dumps(dict(Success=0, Result='修改失败,信息不存在！'))
+
+        elif request.method == 'POST':
             data = PermissionForRd(id).permission_edit()
             if data == '200':
                 return json.dumps(dict(Success=1, Result='修改成功'))
