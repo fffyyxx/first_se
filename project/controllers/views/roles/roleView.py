@@ -37,7 +37,7 @@ def view_role_table():
         print(e)
 
 
-@Role.route('/view/role_curd/<int:id>', methods=['DELETE', 'PUT', 'GET'])
+@Role.route('/view/role_curd/<int:id>', methods=['DELETE', 'POST', 'GET'])
 @login_check
 def view_role_rd(id):
     try:
@@ -48,7 +48,7 @@ def view_role_rd(id):
             else:
                 return json.dumps(dict(Success=0, Result='删除失败,信息不存在！'))
 
-        elif request.method == 'PUT':
+        elif request.method == 'POST':
             data = RoleForRd(id).role_edit()
             if data == '200':
                 return json.dumps(dict(Success=1, Result='修改成功'))
@@ -73,9 +73,26 @@ def view_role_cu():
             return render_template('roles/roleedit.html', data=data)
             # return render_template('users/useredit1.html')
         elif request.method == 'POST':
+            # 添加角色
             rolename_id = request.form.get('role_name')
             role = models.Role(RoleName=rolename_id)
             models.db.session.add(role)
+
+            # 添加角色权限关联
+            models.db.session.flush()
+            rolepermission_rid = role.id
+            # rolepermission_pid = request.form.get('permission_name')
+            rolepermission_pids = request.values.getlist('permission_name')
+            for rolepermission_pid in rolepermission_pids:
+                model = models.RoleMenuPermission.query.filter_by(Permission_id=rolepermission_pid).all()
+                for m in model:
+                    if m.Role_id == None:
+                        menu_add = m.Menu_id
+                        rolepermissionmenu = models.RoleMenuPermission(Role_id=rolepermission_rid,
+                                                                       Permission_id=rolepermission_pid,
+                                                                       Menu_id=menu_add)
+                        models.db.session.add(rolepermissionmenu)
+
             models.db.session.commit()
             return json.dumps(dict(Success=1, Result='修改成功'))
         else:

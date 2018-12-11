@@ -18,47 +18,16 @@
                             <td class="txtleft"><h4>用户名称：</h4></td>
                             <td>
                                 <h4>
-{#                                    {% if data.isadmin == '1' %}#}
-{#                                        <input name="username_id" type="text" class="form-control" placeholder="请输入任务名称"#}
-{#                                               value="{{ data.username_id }}"/>#}
-{#                                    {% else %}#}
-{#                                        {{ data.username_id }}#}
-{#                                    {% endif %}#}
                                     <input name="user_name" type="text" class="form-control" placeholder="请输入用户名称"
                                                value="{{ data.user_name }}"/>
                                 </h4>
                             </td>
                         </tr>
 
-{#                        <tr>#}
-{#                            <td class="txtleft"><h4>扫描策略：</h4></td>#}
-{#                            <td>#}
-{#                                <h4>#}
-{#                                    {% if data.taskpolicyid == 0 %}#}
-{#                                        <select class="form-control" name="taskscanpolicy">#}
-{#                                            <option value="{{ data.taskpolicyid }}">{{ data.taskpolicy }}</option>#}
-{#                                            {% for p in data.taskpolicysel %}#}
-{#                                                <option value="{{ p }}">{{ data.taskpolicysel[p] }}</option>#}
-{#                                            {% endfor %}#}
-{#                                        </select>#}
-{#                                    {% else %}#}
-{#                                        {{ data.taskpolicy }}#}
-{#                                    {% endif %}#}
-{#                                </h4>#}
-{#                            </td>#}
-{#                        </tr>#}
-
                         <tr>
                             <td class="txtleft"><h4>登陆名称：</h4></td>
                             <td>
                                 <h4>
-{#                                    {% if data.isadmin == '1' %}#}
-{#                                        <input name="loginname_id" type="text" class="form-control"#}
-{#                                               placeholder="请输入已有设备地址ip/ip地址段"#}
-{#                                               value="{{ data.loginname_id }}"/>#}
-{#                                    {% else %}#}
-{#                                        {{ data.loginname_id }}#}
-{#                                    {% endif %}#}
                                     <input name="login_name" type="text" class="form-control"
                                                placeholder="请输入登陆名称"
                                                value="{{ data.login_name }}"/>
@@ -77,71 +46,18 @@
                             </td>
                         </tr>
 
-{#                        <tr>#}
-{#                            <td class="txtleft"><h4>任务描述：</h4></td>#}
-{#                            <td>#}
-{#                                <h4>#}
-{#                                    {% if data.requeststatus == '1' %}#}
-{#                                        <textarea name="tasktargetinfo" class="form-control"#}
-{#                                                  placeholder="本次任务说明:安全检查、漏洞复查等">{{ data.tasktargetinfo }}</textarea>#}
-{#                                    {% else %}#}
-{#                                        {{ data.tasktargetinfo }}#}
-{#                                    {% endif %}#}
-{#                                </h4>#}
-{#                            </td>#}
-{#                        </tr>#}
-{#                        <tr>#}
-{#                            <td class="txtleft"><h4>申请人：</h4></td>#}
-{#                            <td><h4>{{ data.username_id }}</h4></td>#}
-{#                        </tr>#}
-{#                        <tr>#}
-{#                            <td class="txtleft"><h4>申请状态：</h4></td>#}
-{#                            <td><h4>#}
-{#                                {% if data.requeststatus == '1' %}#}
-{#                                    创建中#}
-{#                                {% elif data.requeststatus == '2' %}#}
-{#                                    待审批#}
-{#                                {% elif data.requeststatus == '3' %}#}
-{#                                    审批通过#}
-{#                                {% else %}#}
-{#                                    审批拒绝#}
-{#                                {% endif %}#}
-{#                            </h4></td>#}
-{#                        </tr>#}
-{#                        <tr>#}
-{#                            <td class="txtleft"><h4>创建时间：</h4></td>#}
-{#                            <td><h4>{{ data.createtime }}</h4></td>#}
-{#                        </tr>#}
-{#                        {% if data.requeststatus != '1' %}#}
-{#                            <tr>#}
-{#                                <td class="txtleft"><h4>任务状态：</h4></td>#}
-{#                                <td><h4>#}
-{#                                    {% if data.taskstatus == '1' %}#}
-{#                                        待执行#}
-{#                                    {% elif data.taskstatus == '2' %}#}
-{#                                        执行中#}
-{#                                    {% elif data.taskstatus == '3' %}#}
-{#                                        已结束#}
-{#                                    {% elif data.taskstatus == '4' %}#}
-{#                                        已取消#}
-{#                                    {% else %}#}
-{#                                        已暂停#}
-{#                                    {% endif %}#}
-{#                                </h4></td>#}
-{#                            </tr>#}
-{#                        {% endif %}#}
-{#                        {% if data.requeststatus == '2' %}#}
-{#                            <tr>#}
-{#                                <td class="txtleft"><h4>审批备注：</h4></td>#}
-{#                                <td><h4><textarea name="auditinfo" class="form-control"#}
-{#                                                  placeholder="对本次任务的核查说明"></textarea></h4></td>#}
-{#                            </tr>#}
-{#                        {% elif data.requeststatus == '4' %}#}
-{#                            <tr>#}
-{#                                <td class="txtleft"><h4>审批备注：</h4></td>#}
-{#                                <td><h4>{{ data.auditinfo }}</h4></td>#}
-{#                            </tr>#}
-{#                        {% endif %}#}
+                        <tr>
+                            <td class="txtleft"><h4>所属角色：</h4></td>
+                            <td>
+                                <h4>
+                                    <input name="role_name" type="checkbox"
+                                               value="{{ 3 }}"/>管理员<br />
+                                    <input name="role_name" type="checkbox"
+                                               value="{{ 4 }}"/>用户<br />
+                                </h4>
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
                 <div class="row">

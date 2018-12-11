@@ -44,12 +44,18 @@ class Permission(db.Model):
     id = db.Column(db.INTEGER, primary_key=True)
     per_name = db.Column(db.String(50))
 
+    menus = db.relationship('Menu', secondary='role_menu_permission',
+                            backref=db.backref('permissions', lazy='dynamic'), lazy='dynamic')
+
 
 class Role(db.Model):
     __tablename__ = 'role'
 
     id = db.Column(db.INTEGER, primary_key=True)
     RoleName = db.Column(db.String(50))
+
+    permissions = db.relationship('Permission', secondary='role_menu_permission',
+                                  backref=db.backref('roles', lazy='dynamic'), lazy='dynamic')
 
 
 class TaskmanageScanner(db.Model):
@@ -75,6 +81,8 @@ class User(db.Model):
     LoginName = db.Column(db.String(50))
     IsAdmin = db.Column(db.INTEGER)
     password_hash = db.Column(db.String(50))
+
+    roles = db.relationship('Role', secondary='user_role', backref=db.backref('users', lazy='dynamic'), lazy='dynamic')
 
     # def __init__(self, *args, **kwargs):
     #     self.LoginName = kwargs.get('Loginname')
@@ -172,9 +180,12 @@ class RoleMenuPermission(db.Model):
     __tablename__ = 'role_menu_permission'
 
     id = db.Column(db.INTEGER, primary_key=True)
-    Role_id = db.Column(db.INTEGER, nullable=False)
-    Menu_id = db.Column(db.INTEGER, nullable=False)
-    Permission_id = db.Column(db.INTEGER, nullable=False, index=True)
+    # Role_id = db.Column(db.INTEGER, nullable=False)
+    # Menu_id = db.Column(db.INTEGER, nullable=False)
+    # Permission_id = db.Column(db.INTEGER, nullable=False, index=True)
+    Role_id = db.Column(db.INTEGER, db.ForeignKey('role.id'))
+    Menu_id = db.Column(db.INTEGER, db.ForeignKey('menu.id'))
+    Permission_id = db.Column(db.INTEGER, db.ForeignKey('permission.id'))
 
 
 class TaskmanageScannerpolicy(db.Model):
@@ -193,8 +204,10 @@ class UserRole(db.Model):
     __tablename__ = 'user_role'
 
     id = db.Column(db.INTEGER, primary_key=True)
-    User_id = db.Column(db.INTEGER, nullable=False)
-    Role_id = db.Column(db.INTEGER, nullable=False)
+    # User_id = db.Column(db.INTEGER, nullable=False)
+    # Role_id = db.Column(db.INTEGER, nullable=False)
+    User_id = db.Column(db.INTEGER, db.ForeignKey('user.id'))
+    Role_id = db.Column(db.INTEGER, db.ForeignKey('role.id'))
 
 
 class VulnmanageScanvuln(db.Model):

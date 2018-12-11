@@ -1,6 +1,7 @@
 from controllers.models.models import User, db, Role, Permission
 from sqlalchemy import or_
 from flask import request
+from controllers.models import models
 
 
 class PermissionForAll(object):
@@ -52,13 +53,30 @@ class PermissionForRd(object):
 
     def permission_edit(self):
         db.session.commit()
-        model = Permission.query.filter_by(id=self.id).first()
-        if model:
-            model.per_name = request.form.get('permission_name')
-            db.session.commit()
-            return '200'
-        else:
-            return '404'
+        # model = Permission.query.filter_by(id=self.id).first()
+        # if model:
+        #     model.per_name = request.form.get('permission_name')
+        #     db.session.commit()
+        #     return '200'
+        # else:
+        #     return '404'
+
+        PermissionForRd.permission_delete(self)
+        # 添加权限
+        pername = request.form.get('permission_name')
+        permission = models.Permission(per_name=pername)
+        models.db.session.add(permission)
+        # 添加权限菜单关联
+        models.db.session.flush()
+        permissionmenu_pid = permission.id
+        # permissionmenu_mid = request.form.get('menu_url')
+        permissionmenu_mids = request.values.getlist('menu_url')
+        for permissionmenu_mid in permissionmenu_mids:
+            rolepermission = models.RoleMenuPermission(Permission_id=permissionmenu_pid,
+                                                       Menu_id=permissionmenu_mid)
+            models.db.session.add(rolepermission)
+
+        models.db.session.commit()
 
     def permission_read(self):
         global data

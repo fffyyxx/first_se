@@ -1,4 +1,4 @@
-from controllers.models.models import User, db, Role
+from controllers.models.models import User, db, Role, UserRole
 from sqlalchemy import or_
 from flask import request
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -85,13 +85,14 @@ class UserForRd(object):
                 'user_name': model.UserName,
                 'login_name': model.LoginName,
                 'is_admin': model.IsAdmin,
-                'pd_hash': ''
+                'pd_hash': '',
+                # 'roleusername': model.roles.all()[0].RoleName   #user表对应的role角色表的角色名称
             }
         else:
             data = {
                 'user_name': '',
                 'login_name': '',
                 'is_admin': '',
-                'pd_hash': ''
+                'pd_hash': '',
             }
         return data

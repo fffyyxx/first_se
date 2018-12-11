@@ -37,7 +37,7 @@ def view_permission_table():
         print(e)
 
 
-@Permission.route('/view/permission_curd/<int:id>', methods=['DELETE', 'PUT', 'GET', 'POST'])
+@Permission.route('/view/permission_curd/<int:id>', methods=['DELETE', 'GET', 'POST'])
 @login_check
 def view_permission_rd(id):
     try:
@@ -47,13 +47,6 @@ def view_permission_rd(id):
                 return json.dumps(dict(Success=1, Result='删除成功！'))
             else:
                 return json.dumps(dict(Success=0, Result='删除失败,信息不存在！'))
-
-        elif request.method == 'PUT':
-            data = PermissionForRd(id).permission_edit()
-            if data == '200':
-                return json.dumps(dict(Success=1, Result='修改成功'))
-            else:
-                return json.dumps(dict(Success=0, Result='修改失败,信息不存在！'))
 
         elif request.method == 'POST':
             data = PermissionForRd(id).permission_edit()
@@ -80,9 +73,23 @@ def view_permission_cu():
             return render_template('permission/permissionedit.html', data=data)
             # return render_template('users/useredit1.html')
         elif request.method == 'POST':
+            # 添加权限
             pername = request.form.get('permission_name')
             permission = models.Permission(per_name=pername)
             models.db.session.add(permission)
+
+            # 添加权限菜单关联
+            models.db.session.flush()
+            permissionmenu_pid = permission.id
+            # permissionmenu_mid = request.form.get('menu_url')
+            permissionmenu_mids = request.values.getlist('menu_url')
+            for permissionmenu_mid in permissionmenu_mids:
+                rolepermission = models.RoleMenuPermission(
+                                                           Permission_id=permissionmenu_pid,
+                                                           Menu_id=permissionmenu_mid
+                                                           )
+                models.db.session.add(rolepermission)
+
             models.db.session.commit()
             return json.dumps(dict(Success=1, Result='修改成功'))
         else:

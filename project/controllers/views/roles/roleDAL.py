@@ -1,6 +1,7 @@
-from controllers.models.models import User, db, Role
+from controllers.models.models import User, db, Role, RoleMenuPermission
 from sqlalchemy import or_
 from flask import request
+from controllers.models import models
 
 
 class RoleForAll(object):
@@ -42,7 +43,12 @@ class RoleForRd(object):
 
     def role_delete(self):
         db.session.commit()  # 清楚程序以及数据库层面带来的缓存问题
+
         model = Role.query.filter_by(id=self.id).first()
+        model1 = RoleMenuPermission.query.filter_by(Role_id=self.id).all()
+        for m in model1:
+            db.session.delete(m)
+            db.session.commit()
         if model:
             db.session.delete(model)
             db.session.commit()
@@ -52,13 +58,34 @@ class RoleForRd(object):
 
     def role_edit(self):
         db.session.commit()
-        model = Role.query.filter_by(id=self.id).first()
-        if model:
-            model.RoleName = request.form.get('role_name')
-            db.session.commit()
-            return '200'
-        else:
-            return '404'
+        # model = Role.query.filter_by(id=self.id).first()
+        # if model:
+        #     model.RoleName = request.form.get('role_name')
+        #     db.session.commit()
+        #     return '200'
+        # else:
+        #     return '404'
+
+        RoleForRd.role_delete(self)
+        # 添加角色
+        rolename_id = request.form.get('role_name')
+        role = models.Role(RoleName=rolename_id)
+        models.db.session.add(role)
+        # 添加角色权限关联
+        models.db.session.flush()
+        rolepermission_rid = role.id
+        # rolepermission_pid = request.form.get('permission_name')
+        rolepermission_pids = request.values.getlist('permission_name')
+        for rolepermission_pid in rolepermission_pids:
+            model = models.RoleMenuPermission.query.filter_by(Permission_id=rolepermission_pid).all()
+            for m in model:
+                if m.Role_id == None:
+                    menu_add = m.Menu_id
+                    rolepermissionmenu = models.RoleMenuPermission(Role_id=rolepermission_rid,
+                                                                   Permission_id=rolepermission_pid,
+                                                                   Menu_id=menu_add)
+                    models.db.session.add(rolepermissionmenu)
+        models.db.session.commit()
 
     def role_read(self):
         global data
