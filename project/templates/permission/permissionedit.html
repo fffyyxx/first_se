@@ -42,8 +42,8 @@
                     <div class="text-center">
                         <div class="btn-group">
                             <div class="col-xs-6 col-sm-6">
-{#                                <span class="btn btn-primary" id="btnsubmit">提交</span>#}
-                                <input type="submit" value="提交" class="btn btn-primary" />
+                                <span class="btn btn-primary" id="btnsubmit">提交</span>
+{#                                <input type="submit" value="提交" class="btn btn-primary" />#}
                             </div>
                         </div>
                     </div>
@@ -59,10 +59,11 @@
     <script>
         var option = {
             type: 'POST',
-            url: '/view/permission_curd',
+            {#url: '/view/permission_curd',#}
+            url: location.pathname,
             dataType: 'json',
             success: function (data) {
-                if (data.success == 1) {
+                if (data) {
                     //showSuccessMsgPlus(data.result);
                     layer.msg(data.result, {icon: 1, time: 2000, zIndex: 200000000}, function () {
                         var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引

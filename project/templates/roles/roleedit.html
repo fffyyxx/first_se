@@ -45,8 +45,9 @@
                         <div class="btn-group">
                             <div class="col-xs-6 col-sm-6">
 
-                                <span type="submit" class="btn btn-primary" onclick="msg()">提交</span>
+                                <span class="btn btn-primary" id="btnsubmit">提交</span>
 {#                                <input type="submit" value="提交" class="btn btn-primary" id="btnsubmit" />#}
+{#                                <button type="submit" value="edit" class="btn btn-primary" onclick="msg()">edit</button>#}
 
                             </div>
                         </div>
@@ -61,13 +62,14 @@
 {% block js %}
     <script src="{{ url_for('static',filename = 'default/js/defaultjs.js') }}"></script>
     <script>
-        var option = {
+        var option1 = {
             type: 'POST',
-            url: '/view/role_curd',
+            {#url: '/view/role_curd',#}
+            url: location.pathname,
             dataType: 'json',
             success: function (data) {
-                if (data.success == 1) {
-                    {#showSuccessMsg(data.result);#}
+                if (data) {
+                    {#showSuccessMsg(data.Result);#}
                     layer.msg(data.result, {icon: 1, time: 2000, zIndex: 200000000}, function () {
                         var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                         parent.$('#example2').bootstrapTable('refresh');
@@ -81,16 +83,16 @@
                 showErrorMsg(e);
             }
         };
+
         $('#btnsubmit').click(function () {
             {#$('#auditaction').val('1');#}
-            {#$('form').ajaxSubmit(option);#}
-            $('#example2').bootstrapTable('refresh', {pageNumber: 1});
+            $('form').ajaxSubmit(option1);
             return false;
         });
 
-        function msg()
-            {
+        function msg() {
             alert("edit success!");
+            //提交表单并刷新页面
             }
 
     </script>

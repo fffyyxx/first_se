@@ -57,7 +57,7 @@ def view_role_rd(id):
 
         elif request.method == 'GET':
             data = RoleForRd(id).role_read()
-            return render_template('roles/roleedit.html', data=data)
+            return render_template('roles/roleedit.html', data=data, id=id)
 
     except Exception as e:
         print(e)
