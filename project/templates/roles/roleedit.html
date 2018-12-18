@@ -28,12 +28,16 @@
                             <td class="txtleft"><h4>所属权限：</h4></td>
                             <td>
                                 <h4>
-                                    <input name="permission_name" type="checkbox"
-                                               value="{{ 1 }}"/>全<br />
-                                    <input name="permission_name" type="checkbox"
-                                               value="{{ 5 }}"/>除系统管理<br />
-                                    <input name="permission_name" type="checkbox"
-                                               value="{{ 11 }}"/>16.23<br />
+{#                                    <input name="permission_name" type="checkbox"#}
+{#                                               value="{{ 1 }}"/>全<br />#}
+{#                                    <input name="permission_name" type="checkbox"#}
+{#                                               value="{{ 5 }}"/>除系统管理<br />#}
+{#                                    <input name="permission_name" type="checkbox"#}
+{#                                               value="{{ 11 }}"/>16.23<br />#}
+                                    {% for permission in permission_datalist  %}
+                                        <input name="permission_name" type="checkbox" value="{{ permission.id }}"/>{{ permission.per_name }}<br />
+                                    {% endfor %}
+
                                 </h4>
                             </td>
                         </tr>

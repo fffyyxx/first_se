@@ -57,7 +57,8 @@ def view_role_rd(id):
 
         elif request.method == 'GET':
             data = RoleForRd(id).role_read()
-            return render_template('roles/roleedit.html', data=data, id=id)
+            permission_datalist = models.Permission.query.filter(id > 0).all()
+            return render_template('roles/roleedit.html', data=data, id=id, permission_datalist=permission_datalist)
 
     except Exception as e:
         print(e)
@@ -70,7 +71,8 @@ def view_role_cu():
         if request.method == 'GET':
             data_id = request.args.get('id') if request.args.get('id') is not None else 0
             data = RoleForRd(data_id).role_read()
-            return render_template('roles/roleedit.html', data=data)
+            permission_datalist = models.Permission.query.filter(models.Permission.id > 0).all()
+            return render_template('roles/roleedit.html', data=data, permission_datalist=permission_datalist)
             # return render_template('users/useredit1.html')
         elif request.method == 'POST':
             # 添加角色

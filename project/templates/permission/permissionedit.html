@@ -25,13 +25,17 @@
                         </tr>
 
                         <tr>
-                            <td class="txtleft"><h4>所属url：</h4></td>
+                            <td class="txtleft"><h4>可见界面：</h4></td>
                             <td>
                                 <h4>
-                                    <input name="menu_url" type="checkbox"
-                                               value="{{ 2 }}"/>/view/asset<br />
-                                    <input name="menu_url" type="checkbox"
-                                               value="{{ 4 }}"/>/view/users<br />
+{#                                    <input name="menu_url" type="checkbox"#}
+{#                                               value="{{ 2 }}"/>/view/asset<br />#}
+{#                                    <input name="menu_url" type="checkbox"#}
+{#                                               value="{{ 4 }}"/>/view/users<br />#}
+                                    {% for menu in menu_datalist  %}
+                                        <input name="menu_url" type="checkbox" value="{{ menu.id }}"/>{{ menu.Menu_Name }}<br />
+                                    {% endfor %}
+
                                 </h4>
                             </td>
                         </tr>

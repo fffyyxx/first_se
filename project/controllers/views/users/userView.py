@@ -57,7 +57,7 @@ def view_user_table():
         print(e)
 
 
-@User.route('/view/user_curd/<int:id>', methods=['DELETE', 'PUT', 'GET'])
+@User.route('/view/user_curd/<int:id>', methods=['DELETE', 'POST', 'GET'])
 @login_check
 def view_user_rd(id):
     try:
@@ -68,7 +68,7 @@ def view_user_rd(id):
             else:
                 return json.dumps(dict(Success=0, Result='删除失败,信息不存在！'))
 
-        elif request.method == 'PUT':
+        elif request.method == 'POST':
             data = UserForRd(id).user_edit()
             if data == '200':
                 return json.dumps(dict(Success=1, Result='修改成功'))
@@ -77,7 +77,10 @@ def view_user_rd(id):
 
         elif request.method == 'GET':
             data = UserForRd(id).user_read()
-            return render_template('users/useredit.html', data=data)
+            role_datalist = models.Role.query.filter(id > 0).all()
+            role_listlen = len(role_datalist)
+            return render_template('users/useredit.html', data=data, role_datalist=role_datalist,
+                                   role_listlen=role_listlen)
 
     except Exception as e:
         print(e)
@@ -90,8 +93,8 @@ def view_user_cu():
         if request.method == 'GET':
             data_id = request.args.get('id') if request.args.get('id') is not None else 0
             data = UserForRd(data_id).user_read()
-            data_r = RoleForRd(data_id).role_read()
-            return render_template('users/useredit.html', data=data, data_r=data_r)
+            role_datalist = models.Role.query.filter(models.Role.id > 0).all()
+            return render_template('users/useredit.html', data=data, role_datalist=role_datalist)
             # return render_template('users/useredit1.html')
         elif request.method == 'POST':
             # 添加用户

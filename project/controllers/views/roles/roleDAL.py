@@ -58,14 +58,6 @@ class RoleForRd(object):
 
     def role_edit(self):
         db.session.commit()
-        # model = Role.query.filter_by(id=self.id).first()
-        # if model:
-        #     model.RoleName = request.form.get('role_name')
-        #     db.session.commit()
-        #     return '200'
-        # else:
-        #     return '404'
-
         RoleForRd.role_delete(self)
         # 添加角色
         rolename_id = request.form.get('role_name')
@@ -90,7 +82,6 @@ class RoleForRd(object):
     def role_read(self):
         global data
         data = {}
-
         db.session.commit()
 
         model = Role.query.filter_by(id=int(self.id)).first()

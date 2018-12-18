@@ -57,7 +57,8 @@ def view_permission_rd(id):
 
         elif request.method == 'GET':
             data = PermissionForRd(id).permission_read()
-            return render_template('permission/permissionedit.html', data=data)
+            menu_datalist = models.Menu.query.filter(models.Menu.Url != None).all()
+            return render_template('permission/permissionedit.html', data=data, menu_datalist=menu_datalist)
 
     except Exception as e:
         print(e)
@@ -70,7 +71,8 @@ def view_permission_cu():
         if request.method == 'GET':
             data_id = request.args.get('id') if request.args.get('id') is not None else 0
             data = PermissionForRd(data_id).permission_read()
-            return render_template('permission/permissionedit.html', data=data)
+            menu_datalist = models.Menu.query.filter(models.Menu.Url != None).all()
+            return render_template('permission/permissionedit.html', data=data, menu_datalist=menu_datalist)
             # return render_template('users/useredit1.html')
         elif request.method == 'POST':
             # 添加权限

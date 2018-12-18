@@ -50,10 +50,17 @@
                             <td class="txtleft"><h4>所属角色：</h4></td>
                             <td>
                                 <h4>
-                                    <input name="role_name" type="checkbox"
-                                               value="{{ 3 }}"/>管理员<br />
-                                    <input name="role_name" type="checkbox"
-                                               value="{{ 4 }}"/>用户<br />
+{#                                    <input name="role_name" type="checkbox"#}
+{#                                               value="{{ 3 }}"/>管理员<br />#}
+{#                                    <input name="role_name" type="checkbox"#}
+{#                                               value="{{ 4 }}"/>用户<br />#}
+
+{#                                    <span  type="checkbox" class="btn btn-primary" id="tabs" ></span>#}
+
+                                    {% for role in role_datalist  %}
+                                        <input name="role_name" type="checkbox" value="{{ role.id }}"/>{{ role.RoleName }}<br />
+                                    {% endfor %}
+
                                 </h4>
                             </td>
                         </tr>
@@ -82,6 +89,19 @@
 {% block js %}
     <script src="{{ url_for('static',filename = 'default/js/defaultjs.js') }}"></script>
     <script>
+
+        $(function () {
+            var role_datalist = document {{ role_datalist }};
+            var result = "";
+            for (var ii = 0; ii <{{ role_listlen }}; ii++) {
+                {#result += "<label><input type='checkbox' name='role_name' value='" + role_datalist[i].id + "'>" + role_datalist[i].role_name + "</label>";#}
+                result += "<label><input type='checkbox' name='role_name' value='{{ role_datalist[ii].id }}'/>{{ role_datalist[1].RoleName }} </label><br />";
+                {#result += "<label><input type='checkbox' name='role_name' value='" +{{ role_datalist }}[ii].id+ "'/>" +{{ role_datalist }}[ii].RoleName+ "</label><br />";#}
+                {#result += "<label><input type='checkbox' name='role_name' value=' {{ role_datalist }}[ii].id '/> {{ role_datalist }}[ii].RoleName </label><br />";#}
+            }
+            $("#tabs").empty().append(result);
+        });
+
         var option = {
             type: 'POST',
             {#url: '/view/user_curd',#}

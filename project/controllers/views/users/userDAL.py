@@ -2,6 +2,7 @@ from controllers.models.models import User, db, Role, UserRole
 from sqlalchemy import or_
 from flask import request
 from werkzeug.security import check_password_hash, generate_password_hash
+from controllers.models import models
 
 
 class UserForAll(object):
@@ -61,17 +62,36 @@ class UserForRd(object):
 
     def user_edit(self):
         db.session.commit()
-        model = User.query.filter_by(id=self.id).first()
-        if model:
-            model.UserName = request.form.get('user_name')
-            model.LoginName = request.form.get('login_name')
-            password = request.form.get('pd_hash')
-            password_hash = generate_password_hash(password)
-            model.password_hash = password_hash
-            db.session.commit()
-            return '200'
-        else:
-            return '404'
+        UserForRd.user_delete(self)
+        # 添加用户
+        username_id = request.form.get('user_name')
+        loginname_id = request.form.get('login_name')
+        password = request.form.get('pd_hash')
+        password_hash = generate_password_hash(password)
+        user = models.User(UserName=username_id, LoginName=loginname_id, password_hash=password_hash)
+        models.db.session.add(user)
+        # 添加用户角色关联
+        models.db.session.flush()
+        userrole_uid = user.id
+        # userrole_rid = request.form.get('role_name')
+        userrole_rids = request.values.getlist('role_name')
+        for userrole_rid in userrole_rids:
+            userrole = models.UserRole(User_id=userrole_uid, Role_id=userrole_rid)
+            models.db.session.add(userrole)
+
+        models.db.session.commit()
+
+        # model = User.query.filter_by(id=self.id).first()
+        # if model:
+        #     model.UserName = request.form.get('user_name')
+        #     model.LoginName = request.form.get('login_name')
+        #     password = request.form.get('pd_hash')
+        #     password_hash = generate_password_hash(password)
+        #     model.password_hash = password_hash
+        #     db.session.commit()
+        #     return '200'
+        # else:
+        #     return '404'
 
     def user_read(self):
         global data
