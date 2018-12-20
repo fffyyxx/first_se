@@ -32,7 +32,6 @@ def viewmenu(username):
             menu_all = Menu.query.filter(or_(Menu.Parent_id == None, Menu.id.in_(ss))).order_by(
                 Menu.Index.asc()).all()
 
-
         for item in menu_all:
             menu_dict[item.id] = {'index': 0, 'title': '', 'url': '', 'parent_id': 0, 'child': '', 'status': 0,
                                   'model': ''}

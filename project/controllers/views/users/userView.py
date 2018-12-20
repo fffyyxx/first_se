@@ -78,9 +78,11 @@ def view_user_rd(id):
         elif request.method == 'GET':
             data = UserForRd(id).user_read()
             role_datalist = models.Role.query.filter(id > 0).all()
-            role_listlen = len(role_datalist)
-            return render_template('users/useredit.html', data=data, role_datalist=role_datalist,
-                                   role_listlen=role_listlen)
+            user_role = models.UserRole.query.filter(models.UserRole.User_id == id).all()
+            ss = []
+            for s in user_role:
+                ss.append(s.Role_id)
+            return render_template('users/useredit.html', data=data, role_datalist=role_datalist, ss=ss)
 
     except Exception as e:
         print(e)

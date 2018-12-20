@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, json, session, redirect, 
 from controllers.views.login import login_check
 from ..permissions.permissionDAL import PermissionForAll, PermissionForRd
 from controllers.models import models
+from sqlalchemy import or_,and_
 
 Permission = Blueprint('permission', __name__, template_folder='templates', static_folder='static')
 
@@ -58,7 +59,12 @@ def view_permission_rd(id):
         elif request.method == 'GET':
             data = PermissionForRd(id).permission_read()
             menu_datalist = models.Menu.query.filter(models.Menu.Url != None).all()
-            return render_template('permission/permissionedit.html', data=data, menu_datalist=menu_datalist)
+            permission_menu = models.RoleMenuPermission.query.filter(and_(models.RoleMenuPermission.Permission_id == id,
+                                                                         models.RoleMenuPermission.Role_id == None)).all()
+            ss = []
+            for s in permission_menu:
+                ss.append(s.Menu_id)
+            return render_template('permission/permissionedit.html', data=data, menu_datalist=menu_datalist, ss=ss)
 
     except Exception as e:
         print(e)

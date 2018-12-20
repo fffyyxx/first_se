@@ -58,7 +58,11 @@ def view_role_rd(id):
         elif request.method == 'GET':
             data = RoleForRd(id).role_read()
             permission_datalist = models.Permission.query.filter(id > 0).all()
-            return render_template('roles/roleedit.html', data=data, id=id, permission_datalist=permission_datalist)
+            permission_menu = models.RoleMenuPermission.query.filter(models.RoleMenuPermission.Role_id == id).all()
+            ss = []
+            for s in permission_menu:
+                ss.append(s.Permission_id)
+            return render_template('roles/roleedit.html', data=data, id=id, permission_datalist=permission_datalist, ss=ss)
 
     except Exception as e:
         print(e)

@@ -58,7 +58,11 @@
 {#                                    <span  type="checkbox" class="btn btn-primary" id="tabs" ></span>#}
 
                                     {% for role in role_datalist  %}
-                                        <input name="role_name" type="checkbox" value="{{ role.id }}"/>{{ role.RoleName }}<br />
+                                        {% if role.id in ss %}
+                                            <input name="role_name" type="checkbox" value="{{ role.id }}" checked/>{{ role.RoleName }}<br />
+                                        {% else %}
+                                            <input name="role_name" type="checkbox" value="{{ role.id }}"/>{{ role.RoleName }}<br />
+                                        {% endif %}
                                     {% endfor %}
 
                                 </h4>

@@ -35,7 +35,11 @@
 {#                                    <input name="permission_name" type="checkbox"#}
 {#                                               value="{{ 11 }}"/>16.23<br />#}
                                     {% for permission in permission_datalist  %}
-                                        <input name="permission_name" type="checkbox" value="{{ permission.id }}"/>{{ permission.per_name }}<br />
+                                        {% if permission.id in ss %}
+                                            <input name="permission_name" type="checkbox" value="{{ permission.id }}" checked/>{{ permission.per_name }}<br />
+                                        {% else %}
+                                            <input name="permission_name" type="checkbox" value="{{ permission.id }}"/>{{ permission.per_name }}<br />
+                                        {% endif %}
                                     {% endfor %}
 
                                 </h4>

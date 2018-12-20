@@ -33,7 +33,11 @@
 {#                                    <input name="menu_url" type="checkbox"#}
 {#                                               value="{{ 4 }}"/>/view/users<br />#}
                                     {% for menu in menu_datalist  %}
-                                        <input name="menu_url" type="checkbox" value="{{ menu.id }}"/>{{ menu.Menu_Name }}<br />
+                                        {% if menu.id in ss %}
+                                            <input name="menu_url" type="checkbox" value="{{ menu.id }}" checked/>{{ menu.Menu_Name }}<br />
+                                        {% else %}
+                                            <input name="menu_url" type="checkbox" value="{{ menu.id }}"/>{{ menu.Menu_Name }}<br />
+                                        {% endif %}
                                     {% endfor %}
 
                                 </h4>
