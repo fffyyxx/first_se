@@ -64,23 +64,19 @@
                                 </h4>
                             </td>
                         </tr>
-
                     </table>
                 </div>
+
                 <div class="row">
                     <div class="text-center">
                         <div class="btn-group">
                             <div class="col-xs-6 col-sm-6">
                                 <span class="btn btn-primary" id="btnsubmit">提交</span>
                             </div>
-{#                            {% if data.requeststatus == '2' %}#}
-{#                                <div class="col-xs-6 col-sm-6">#}
-{#                                    <span class="btn btn-primary" id="btncancel">退回</span>#}
-{#                                </div>#}
-{#                            {% endif %}#}
                         </div>
                     </div>
                 </div>
+
             </form>
         </div>
     </div>
@@ -90,17 +86,17 @@
     <script src="{{ url_for('static',filename = 'default/js/defaultjs.js') }}"></script>
     <script>
 
-        $(function () {
-            var role_datalist = document {{ role_datalist }};
-            var result = "";
-            for (var ii = 0; ii <{{ role_listlen }}; ii++) {
+        {#$(function () {#}
+        {#    var role_datalist = document {{ role_datalist }};#}
+        {#    var result = "";#}
+        {#    for (var ii = 0; ii <{{ role_listlen }}; ii++) {#}
                 {#result += "<label><input type='checkbox' name='role_name' value='" + role_datalist[i].id + "'>" + role_datalist[i].role_name + "</label>";#}
-                result += "<label><input type='checkbox' name='role_name' value='{{ role_datalist[ii].id }}'/>{{ role_datalist[1].RoleName }} </label><br />";
+                {#result += "<label><input type='checkbox' name='role_name' value='{{ role_datalist[ii].id }}'/>{{ role_datalist[1].RoleName }} </label><br />";#}
                 {#result += "<label><input type='checkbox' name='role_name' value='" +{{ role_datalist }}[ii].id+ "'/>" +{{ role_datalist }}[ii].RoleName+ "</label><br />";#}
                 {#result += "<label><input type='checkbox' name='role_name' value=' {{ role_datalist }}[ii].id '/> {{ role_datalist }}[ii].RoleName </label><br />";#}
-            }
-            $("#tabs").empty().append(result);
-        });
+        {#    }#}
+        {#    $("#tabs").empty().append(result);#}
+
 
         var option = {
             type: 'POST',

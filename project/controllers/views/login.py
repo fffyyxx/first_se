@@ -1,9 +1,8 @@
 # coding:utf-8
 from flask import Blueprint, render_template, request, redirect, url_for, session, flash
 from functools import wraps
-from settings import config
 from controllers.models.models import User
-from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.security import check_password_hash
 
 loginView = Blueprint('loginView', __name__)
 
@@ -14,12 +13,8 @@ def login_view():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        password_h = generate_password_hash(password)
-        # if username in config.ConfigWeb.WEB_USER and password == config.ConfigWeb.WEB_PASSWORD:
-
         user = User.query.filter(User.LoginName == username).first()
         if user and check_password_hash(user.password_hash, password):
-        # if user and password == user.password_hash:
             try:
                 model = User.query.filter_by(LoginName=username).first()
                 session['login'] = 'A1akPTQJiz9wi9yo4rDz8ubM1b1'
@@ -57,5 +52,3 @@ def login_check(f):
             print(e)
             return redirect(url_for('loginView.login_view'))
     return wrapper
-
-

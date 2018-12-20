@@ -1,6 +1,6 @@
 # coding:utf-8
 from controllers.models.models import User, Menu, Role, UserRole, RoleMenuPermission, db
-from sqlalchemy import or_
+from sqlalchemy import or_, and_
 
 
 def viewmenu(username):
@@ -20,17 +20,18 @@ def viewmenu(username):
                 join(Role, Role.id == RoleMenuPermission.Role_id). \
                 join(UserRole, UserRole.Role_id == Role.id). \
                 join(User, User.id == UserRole.User_id).filter(User.id == model.id).all()  # 斜杠代表换行,回车后自动生成
+            ss = []
+            for s in menu_ids:
+                ss.append(s.id)
 
-            menu_all = Menu.query.filter(Menu.id.in_(menu_ids.id)).filter(Menu.Menu_Name != '系统管理',
-                                                                          or_(Menu.Parent_id != 3,
-                                                                              Menu.Parent_id == None)).order_by(
+            # menu_all = Menu.query.filter(Menu.id.in_(menu_ids.id)).filter(Menu.Menu_Name != '系统管理',
+            #                                                               or_(Menu.Parent_id != 3,
+            #                                                                   Menu.Parent_id == None)).order_by(
+            #     Menu.Index.asc()).all()
+
+            menu_all = Menu.query.filter(or_(Menu.Parent_id == None, Menu.id.in_(ss))).order_by(
                 Menu.Index.asc()).all()
 
-        # else:
-        #     menu_all = Menu.query.filter(Menu.Menu_Name != '系统管理',
-        #                                  or_(Menu.Parent_id != 3,
-        #                                      Menu.Parent_id == None)).order_by(
-        #         Menu.Index.asc()).all()  # 可以全部查出,但需要前端自行组合,渲染耗费时间
 
         for item in menu_all:
             menu_dict[item.id] = {'index': 0, 'title': '', 'url': '', 'parent_id': 0, 'child': '', 'status': 0,
