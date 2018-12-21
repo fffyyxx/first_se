@@ -105,7 +105,7 @@
                         var str = '';
                         str += '<div class="btn-group">';
                         {#str += '<span class="input-group btn btn-primary" id="detail" onclick="x_admin_show(\'任务详情\',\'/view/tasks_curd/' + row.id + '\',\'70%\',\'95%\')"><i class="fa fa-file-text-o"></i></span>';#}
-                        if (role_level == 1) {
+                        if (role_level == 1 ||role_level == 2) {
                             str += '<span class="input-group btn btn-primary" id="edit" onclick="x_admin_show(\'修改用户\',\'/view/user_curd/' + row.id + '\',\'70%\',\'95%\')"><i class="fa fa-edit"></i></span>';
                         }
                         if (role_level == 1) {

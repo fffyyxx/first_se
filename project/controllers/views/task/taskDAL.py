@@ -37,8 +37,8 @@ class TaskForAll(object):
             task_data = task_data.filter(TaskmanageTask.Taskstatus == self.task_status)
         if self.request_status != '0':
             task_data = task_data.filter(TaskmanageTask.Requeststatus == self.request_status)
-        if self.is_admin != 1:
-            task_data = task_data.filter(TaskmanageTask.Taskuserid == self.user_id)
+        # if self.is_admin != 1:
+        #     task_data = task_data.filter(TaskmanageTask.Taskuserid == self.user_id)
 
         task_items = task_data.paginate(int(page_num), per_page=self.limit, error_out=False).items
         counts = task_data.count()
