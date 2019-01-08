@@ -45,4 +45,5 @@ def internal_server_error(e):
 
 
 if __name__ == '__main__':
+    app.debug = True
     app.run(host=ConfigWeb.WEB_HOST, port=ConfigWeb.WEB_PORT)
