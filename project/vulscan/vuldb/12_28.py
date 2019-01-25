@@ -43,9 +43,9 @@ def check(ip, port, timeout):
                 ssh.close()
 
 
-if __name__ == '__main__':
-    ip = '192.168.3.77'
-    port = 22
-    timeout = 10
-    print(check(ip,port,timeout))
+# if __name__ == '__main__':
+#     ip = '192.168.3.77'
+#     port = 22
+#     timeout = 10
+#     print(check(ip,port,timeout))
 

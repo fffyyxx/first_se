@@ -14,6 +14,7 @@ from controllers.views.policies.policiesView import Policies
 from controllers.views.users.userView import User
 from controllers.views.roles.roleView import Role
 from controllers.views.permissions.permissionView import Permission
+from controllers.views.plugin_vuln.plugin_View import Plugin
 from controllers.views.login import login_check
 from settings.config import ConfigWeb
 
@@ -30,6 +31,7 @@ app.register_blueprint(Policies)
 app.register_blueprint(User)
 app.register_blueprint(Role)
 app.register_blueprint(Permission)
+app.register_blueprint(Plugin)
 
 
 @app.errorhandler(404)

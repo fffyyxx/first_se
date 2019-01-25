@@ -23,7 +23,8 @@ class ConfigWeb(object):
 
 
 class ConfigDB(ConfigWeb):
-    DB_HOST = 'mysql+pymysql://root:vm123@192.168.5.12:3306/new_semf?charset=utf8'
+    # DB_HOST = 'mysql+pymysql://root:vm123@192.168.5.12:3306/new_semf?charset=utf8'
+    DB_HOST = 'mysql+pymysql://root:root@192.168.10.89:3306/new_semf?charset=utf8'
     DB_EDIT = True
 
 

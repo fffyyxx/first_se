@@ -162,9 +162,9 @@ class vulscan():
 
 def queue_get():
     global TASK_DATE_DIC
-    # task_req = na_task.find_and_modify(query={"status": 0, "plan": 0}, update={"$set": {"status": 1}}, sort={'time': 1})
+    task_req = na_task.find_and_modify(query={"status": 0, "plan": 0}, update={"$set": {"status": 1}}, sort={'time': 1})
     # 条件查询进行任务的执行
-    task_req = na_task.find_and_modify(query={"status": 1}, update={"$set": {"status": 0}}, sort={'time': 1})
+    # task_req = na_task.find_and_modify(query={"status": 1}, update={"$set": {"status": 0}}, sort={'time': 1})
     if task_req:
         TASK_DATE_DIC[str(task_req['_id'])] = datetime.datetime.now()
         return task_req['_id'], task_req['plan'], task_req['target'], task_req['plugin']
