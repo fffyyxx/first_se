@@ -2,542 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6660edd-d1e0-4285-9e70-91272341d49f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/views/plugin_vuln/plugin_View.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/css/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/css/plugin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/css/task.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/plugindetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/buss/js/task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/dropify.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/elements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/typicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/dropify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/dropify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/themify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/themify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Karla.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Rancho.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._Roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._S1bXQ0LrY7AzefpgNae9sYDGDUGfDkXyfkzVDelzfFk.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/.__VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._r3NqIkFHFaF3esZDc3WT5BkAz4rYn47Zy2rvigWQf6w.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/._yJONObwbYmkcfKME0p1HqevvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Karla.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Rancho.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/Roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/S1bXQ0LrY7AzefpgNae9sYDGDUGfDkXyfkzVDelzfFk.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/r3NqIkFHFaF3esZDc3WT5BkAz4rYn47Zy2rvigWQf6w.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/google/yJONObwbYmkcfKME0p1HqevvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/._ajaxfileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/._module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/._uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/ajaxfileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/detect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/dropify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/fastclick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.blockUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.scrollTo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.slimscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/modernizr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/pace.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/waves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/jquery-knob/excanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/jquery-knob/jquery.knob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/jquery.poshytip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/morris/morris.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/morris/morris.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/morris/morris.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/multiselect/css/multi-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/multiselect/img/switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/multiselect/js/jquery.multi-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/raphael-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/sweetalert/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/switchery/switchery.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/switchery/switchery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/tip-darkgray/tip-darkgray.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/tip-darkgray/tip-darkgray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/tip-darkgray/tip-darkgray_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/tip-twitter/tip-twitter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/plugin/tip-twitter/tip-twitter_arrows.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/View.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/AntiCSRF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/Conn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/CreateExcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/Login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/QueryLogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/._google" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/css/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/css/plugin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/css/task.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/plugindetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/buss/js/task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/dropify.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/elements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/css/typicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/dropify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/dropify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/themify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/fonts/themify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Karla.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Rancho.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._Roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._S1bXQ0LrY7AzefpgNae9sYDGDUGfDkXyfkzVDelzfFk.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/.__VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._r3NqIkFHFaF3esZDc3WT5BkAz4rYn47Zy2rvigWQf6w.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/._yJONObwbYmkcfKME0p1HqevvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Karla.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Rancho.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/Roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/S1bXQ0LrY7AzefpgNae9sYDGDUGfDkXyfkzVDelzfFk.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/r3NqIkFHFaF3esZDc3WT5BkAz4rYn47Zy2rvigWQf6w.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/google/yJONObwbYmkcfKME0p1HqevvDin1pK8aKteLpeZ5c0A.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/._multiple-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/big/._bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/big/._bg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/big/bg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/images/multiple-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/._ajaxfileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/._module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/._uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/ajaxfileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/detect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/dropify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/fastclick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.blockUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.scrollTo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/jquery.slimscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/modernizr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/pace.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/waves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/components.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/elements.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/css/mixins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/css/variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/material-design-iconic-font/material-design-iconic-font.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/fonts/themify.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/fonts/themify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/fonts/themify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/ie7/ie7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/ie7/ie7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/themify-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/icons/themify-icons/themify-icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/menu.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/pages.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/responsive.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/jquery-knob/excanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/jquery-knob/jquery.knob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/jquery.poshytip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/morris/morris.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/morris/morris.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/morris/morris.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/multiselect/css/multi-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/multiselect/img/switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/multiselect/js/jquery.multi-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/raphael/raphael-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/sweetalert/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/switchery/switchery.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/switchery/switchery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/tip-darkgray/tip-darkgray.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/tip-darkgray/tip-darkgray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/tip-darkgray/tip-darkgray_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/tip-twitter/tip-twitter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/static/plugin/tip-twitter/tip-twitter_arrows.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/analysis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/config.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/task.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vulscan/VulScan.py" beforeDir="false" afterPath="$PROJECT_DIR$/vulscan/VulScan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vulscan/vuldb/12_28.py" beforeDir="false" afterPath="$PROJECT_DIR$/vulscan/vuldb/12_28.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -550,7 +16,7 @@
     <SUITE FILE_PATH="coverage/project$Flask__project_py_.coverage" NAME="Flask (project.py) Coverage Results" MODIFIED="1546908786368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$View.coverage" NAME="View Coverage Results" MODIFIED="1548039233696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/views" />
     <SUITE FILE_PATH="coverage/project$VulScan.coverage" NAME="VulScan Coverage Results" MODIFIED="1548303686367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vulscan" />
-    <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1548303691539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1551673420441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -568,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vulscan/VulScan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1936">
-              <caret line="164" column="120" lean-forward="true" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="120" />
+            <state relative-caret-position="19">
+              <caret line="164" column="120" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="120" />
               <folding>
                 <element signature="e#15#34#0" expanded="true" />
               </folding>
@@ -583,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/View.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="1197">
               <caret line="81" column="46" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="46" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
@@ -595,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/views/plugin_vuln/plugin_View.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+            <state relative-caret-position="1349">
+              <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -605,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+              <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -623,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="97" column="75" lean-forward="true" selection-start-line="97" selection-start-column="75" selection-end-line="97" selection-end-column="75" />
+              <caret line="97" column="75" selection-start-line="97" selection-start-column="75" selection-end-line="97" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -631,8 +97,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vulscan/vuldb/12_28.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="432">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+              <folding>
+                <element signature="e#15#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -720,7 +207,6 @@
         <option value="$PROJECT_DIR$/vulscan/vuldb/phpmyadmin_crackpass.py" />
         <option value="$PROJECT_DIR$/controllers/views/users/userView.py" />
         <option value="$PROJECT_DIR$/project.py" />
-        <option value="$PROJECT_DIR$/settings/config.py" />
         <option value="$PROJECT_DIR$/templates/task.html" />
         <option value="$PROJECT_DIR$/templates/layout1.html" />
         <option value="$PROJECT_DIR$/templates/detail.html" />
@@ -733,10 +219,11 @@
         <option value="$PROJECT_DIR$/vulscan/vuldb/12_28.py" />
         <option value="$PROJECT_DIR$/vulscan/VulScan.py" />
         <option value="$PROJECT_DIR$/controllers/views/plugin_vuln/plugin_View.py" />
+        <option value="$PROJECT_DIR$/settings/config.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="98" />
     <option name="y" value="35" />
     <option name="width" value="857" />
@@ -754,17 +241,6 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="vulscan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="vulscan" type="462c0819:PsiDirectoryNode" />
-              <item name="vuldb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -801,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.VulScan">
+  <component name="RunManager" selected="Flask server.project">
     <configuration name="12_28" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -974,11 +450,12 @@
       <workItem from="1548116283186" duration="20248000" />
       <workItem from="1548203163690" duration="21654000" />
       <workItem from="1548290901418" duration="10254000" />
+      <workItem from="1551670871144" duration="765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499181000" />
+    <option name="totallyTimeSpent" value="499946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -990,15 +467,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1849" height="902" extended-state="6" />
+    <frame x="67" y="25" width="1849" height="864" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18323153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18545252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49805662" visible="true" weight="0.36010364" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49805662" visible="true" weight="0.35967302" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34196892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1195,13 +672,6 @@
     <entry file="file://$USER_HOME$/ht/semf/project/venv/lib/python3.6/site-packages/bson/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/ht/semf/project/venv/lib/python3.6/site-packages/flask/blueprints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -1257,13 +727,6 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1387,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/lib/CreateExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/views/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1442,34 +895,6 @@
     <entry file="file://$PROJECT_DIR$/views/static/images/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/plugin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="97" column="75" lean-forward="true" selection-start-line="97" selection-start-column="75" selection-end-line="97" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vulscan/vuldb/12_28.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vulscan/vuldb/smb/smb_constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1477,9 +902,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vulscan/VulScan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="164" column="120" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="120" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/View.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="1197">
           <caret line="81" column="46" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="46" />
           <folding>
             <element signature="e#25#36#0" expanded="true" />
@@ -1489,18 +924,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/views/plugin_vuln/plugin_View.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+        <state relative-caret-position="1349">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vulscan/VulScan.py">
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1936">
-          <caret line="164" column="120" lean-forward="true" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="120" />
+        <state relative-caret-position="266">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="97" column="75" selection-start-line="97" selection-start-column="75" selection-end-line="97" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vulscan/vuldb/12_28.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/lib/CreateExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
-            <element signature="e#15#34#0" expanded="true" />
+            <element signature="e#25#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding>
+            <element signature="e#15#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
